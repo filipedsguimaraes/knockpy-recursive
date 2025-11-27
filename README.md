@@ -39,7 +39,7 @@ python3 knockpy.py -r domain.com
 ###### You need python3, pip3, git.
 
 ```bash
-git clone https://github.com/filipedsguimaraes/knock.git
+git clone https://github.com/filipedsguimaraes/knockpy-recursive.git
 cd knock
 pip3 install -r requirements.txt
 
@@ -49,7 +49,7 @@ python3 knockpy.py <DOMAIN>
 ###### As root
 
 ```bash
-git clone https://github.com/filipedsguimaraes/knock.git
+git clone https://github.com/filipedsguimaraes/knockpy-recursive.git
 cd knock
 python3 setup.py install
 
