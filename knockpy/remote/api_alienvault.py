@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 """
 Let's start with simple function specifications:
@@ -29,7 +30,7 @@ Let's start with simple function specifications:
 # You can get the api key at https://otx.alienvault.com/api
 def get(domain):
 	# alienvault -> JSON: key -> hostname
-	apikey = "" # <- here your API KEY
+	apikey = os.getenv("ALIENVAULT_KEY") # <- here your API KEY
 	headers = {"X-OTX-API-KEY": apikey} 
 	url = "https://otx.alienvault.com/api/v1/indicators/domain/{domain}/passive_dns".format(domain=domain)
 	resp = requests.get(url, timeout=5, headers=headers).text

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+from dotenv import load_dotenv
 from argparse import RawTextHelpFormatter
 import concurrent.futures
 import argparse
@@ -12,6 +13,7 @@ import sys
 import re
 import os
 
+load_dotenv()
 __version__ = "Recursive"
 
 user_agent = [
